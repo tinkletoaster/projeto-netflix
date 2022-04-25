@@ -1,0 +1,104 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base*/
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF
+}
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(/img/hoc-capa.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.btn {
+    font-size: 11px;
+    height: 50px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.fas {
+    margin-right: 7px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
